@@ -1,0 +1,259 @@
+/* general css */
+body{
+    margin-top: 50px;
+}
+
+/* header start */
+.header-h3{
+    font-family: 'Yeseva One', cursive;
+    font-size: 26px;
+}
+
+.header-h3{
+    padding-left: 70px;
+}
+/* first section start */
+.first-section{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.half-side{
+    width: 55%;
+    padding-left: 5%;
+}
+
+.half-side img{
+    width: 60%;
+    padding-left: 90px;
+}
+
+.sidebar-text{
+    font-size: 35px;
+    font-family: 'Yeseva One', cursive;
+}
+
+.left-side{
+    padding-top: 50px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Yeseva One', cursive;
+}
+.paragraph{
+    padding-bottom: 20px;
+    font-size: 15px;
+    color: rgb(46, 46, 46);
+    font-family: 'Yeseva One', cursive;
+    font-weight: 700;
+}
+
+.button{
+    display: flex;
+}
+
+.color-btn{
+    text-decoration: none;
+    font-weight: 700;
+    background-color: #E02C6D;
+    color: white;
+    padding: 13px 50px;
+    border-radius: 25px; 
+}
+
+.fa-arrow-right{
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+/* pricing section start */
+.section-head{
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.grid-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+.pricing{
+    width: 300px;
+    height: 476px;
+    box-shadow: 5px 10px 15px grey;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.pricing .price-banner img{
+    width: 300px;
+    height: 256px;
+}
+
+.price-info h3{
+    font-size: 24px;
+}
+
+.fa-star.filled{
+    color: #FFC014;
+    font-size: 10px;
+}
+
+.fa-star-half.empty{
+    color: #FFC014;
+    font-size: 10px;
+}
+
+.price-rating{
+    display: flex;
+    align-items: baseline;
+}
+
+.rating-text{
+    padding-left: 20px;
+    font-weight: 700;
+    color: #5E6366;
+    font-size: 14px;
+}
+.price-detail{
+    color: #787885;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.see-more{
+    color: rgb(255, 95, 95);
+    text-align:end;
+    padding-right: 120px;
+}
+
+
+/* Custom section start */
+
+.hire-me{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    box-shadow: 5px 10px 15px grey;
+}
+
+.hire-me img{
+    width: 300px;
+    height: 250px;
+}
+
+.middle{
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+/* Footer section start */
+.footer{
+    text-align: center;
+    background-color: #0A0826;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer h3{
+    color: white;
+    font-size: 24px;
+}
+
+.footer p{
+    color: #D9DBE1;
+    font-size: 14px;
+}
+
+.footer-icon{
+    color: white;
+}
+
+.footer-icon .fa{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* mediaqueries */
+@media only screen and (max-width:688px) {
+    .first-section{
+    display:block;
+    width: 100%;
+    }
+
+    .first-section .paragraph{
+        justify-content: stretch;
+    }
+    
+    .half-side img{
+        width: 100%;
+        padding-top: 50px;
+    }
+    .grid-section{
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 50px;
+    }
+
+    .hire-me{
+        display:list-item;
+        padding-left: 80px;
+        box-shadow: none;
+    }
+
+    .middle{
+        padding-bottom: 40px;
+    }
+
+    .footer{
+        width: 455px;
+    }
+}
+
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .first-section{
+    display:block;
+    width: 100%;
+    }
+
+    .first-section .paragraph{
+        justify-content: stretch;
+    }
+    
+    .half-side img{
+        width: 100%;
+        padding-top: 50px;
+    }
+    .grid-section{
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 150px;
+    }
+
+    .hire-me{
+        display:list-item;
+        padding-left: 320px;
+        box-shadow: none;
+    }
+
+    .middle{
+        padding-bottom: 40px;
+    }
+
+    .footer{
+        width: 1000px;
+    }
+}
